@@ -1,0 +1,51 @@
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.card {
+    margin-bottom: 20px;
+}
+
+.author {
+    font-size: 0.875rem; /* Define o tamanho da fonte */
+    margin-top: 0.25rem; /* Adiciona uma margem superior */
+    font-style: italic;
+    font-stretch: wider;
+
+}
+
+.tag {
+    color: white; /* Cor do texto branca */
+    padding: 0.2em 0.5em; /* Espaçamento interno */
+    margin-top: 10px;
+    border-radius: 0.25em; /* Bordas arredondadas */
+    display: inline-block; /* Exibição inline-block para se comportar como uma tag */
+    font-size: 0.875rem; /* Tamanho da fonte */
+}
+
+.tag.sociedade {
+    background-color: #007bff;
+}
+
+.tag.literatura {
+    background-color: #5bdb28;
+}
+
+.tag.tech {
+    background-color: #eff31e;
+}
+
+.card-img-top {
+    cursor: pointer; /* Define o cursor como pointer (mãozinha) */
+}
