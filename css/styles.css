@@ -59,6 +59,15 @@ nav ul li {
 }
 
 
+.badges {
+    border-style: solid;
+    border-right: black;
+    border-left: black;
+    padding: 1rem 1rem;
+    margin: 1rem 0;
+    background-color: #f0f0f0; /* Cinza claro */
+    
+}
 
 .badges img {
     display: inline-flex;
