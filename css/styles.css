@@ -18,20 +18,21 @@ nav ul li {
 }
 
 .author {
-    font-size: 0.875rem; /* Define o tamanho da fonte */
-    margin-top: 0.25rem; /* Adiciona uma margem superior */
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
     font-style: italic;
     font-stretch: wider;
+    padding: 0 0.25rem;
 
 }
 
 .tag {
-    color: white; /* Cor do texto branca */
-    padding: 0.2em 0.5em; /* Espaçamento interno */
+    color: white;
+    padding: 0.2em 0.5em;
     margin-top: 10px;
-    border-radius: 0.25em; /* Bordas arredondadas */
+    border-radius: 0.25em;
     display: inline-block; /* Exibição inline-block para se comportar como uma tag */
-    font-size: 0.875rem; /* Tamanho da fonte */
+    font-size: 0.875rem;
 }
 
 .tag.sociedade {
@@ -49,3 +50,30 @@ nav ul li {
 .card-img-top {
     cursor: pointer; /* Define o cursor como pointer (mãozinha) */
 }
+
+.no-bullets li {
+    list-style: none;
+    padding: 3px;
+    margin-left: -20px;
+    font-stretch: condensed;
+}
+
+
+
+.badges img {
+    display: inline-flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 5px;      
+}
+
+aside {
+    margin-top: 10px;
+}
+
+aside h2 {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    padding-top: 15px;
+}
+

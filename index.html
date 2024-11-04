@@ -16,500 +16,582 @@
     <header class="bg-dark text-white p-3">
         <div class="container">
             <div class="d-flex justify-content-between align-items-center">
-                <h1>Próximas Leituras</h1>
+                <h1 class="d-none d-md-block">Próximas Leituras</h1>
 
-                <nav>
-                    <ul class="nav">
-                        <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-white" href="#" id="categoriesDropdown"
-                                role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Categories
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="categoriesDropdown">
-                                <a class="dropdown-item" href="#" data-category="all">All</a>
-                                <a class="dropdown-item" href="#" data-category="sociedade">Sociedade Atual</a>
-                                <a class="dropdown-item" href="#" data-category="literatura">Literatura</a>
-                                <a class="dropdown-item" href="#" data-category="tech">Tech</a>
-                            </div>
-                        </li>
-                        <li class="nav-item"><a class="nav-link text-white" href="#about">About</a></li>
-                        <li class="nav-item"><a class="nav-link text-white" href="#contato">Contact</a></li>
-                    </ul>
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                    <div class="container">
+                        <a class="navbar-brand d-block d-md-none d" href="#">Próximas Leituras</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="categoriesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Categorias
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="categoriesDropdown">
+                                        <a class="dropdown-item" href="#" data-category="all">Todos os livros</a>
+                                        <a class="dropdown-item" href="#" data-category="sociedade">Sociedade Atual</a>
+                                        <a class="dropdown-item" href="#" data-category="literatura">Literatura</a>
+                                        <a class="dropdown-item" href="#" data-category="tech">Tech</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item"><a class="nav-link" href="#about">Sobre</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </nav>
+                
                 <div id="datetime" class="text-white"></div>
             </div>
         </div>
     </header>
 
-    <section class="container my-5">
-        <div class="row">
 
-            <!---------------------------------------- Sociedade ------------------------------------------------------------>
+    <main>
+        <!-- LIVROS -->
 
-            <!-- Dark Money | Book -->
-            <div class="col-md-3 dataFilter  col-sm-6 sociedade">
-                <div class="card">
-                    <div data-toggle="tooltip" title="Clique para mais detalhes">
-                        <img src="./img/books/dark-money.jpg" class="card-img-top" alt="Book Image" data-toggle="modal"
-                            data-target="#modalDarkMoney">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Dark Money</h5>
-                        <h5 class="card-subtitle small">The Hidden History of the Billionaires Behind the Rise of the
-                            Radical Right</h5>
-                        <h6 class="tag sociedade">Sociedade</h6>
-                        <p class="card-text">Who are the immensely wealthy right-wing ideologues shaping the fate of
-                            America today? From the bestselling author of The Dark Side, an electrifying work of
-                            investigative journalism that uncovers the agenda of this powerful group.</p>
-                        <div class="d-flex align-items-center mt-3">
-                            <img src="./img/books/no-profile-image-author.png" class="rounded-circle" alt="Avatar">
-                            <div class="ml-3">
-                                <p class="mb-0 author">Jane Mayer</p>
+        <section class="container my-5">
+            <div class="row">
 
+                <!---------------------------------------- Sociedade ------------------------------------------------------------>
+
+                <!-- Dark Money | Book -->
+                <div class="col-md-4 dataFilter  col-sm-6 sociedade">
+                    <div class="card">
+                        <div data-toggle="tooltip" title="Clique para mais detalhes">
+                            <img src="./img/books/dark-money.jpg" class="card-img-top" alt="Book Image"
+                                data-toggle="modal" data-target="#modalDarkMoney">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Dark Money</h5>
+                            <h5 class="card-subtitle small">The Hidden History of the Billionaires Behind the Rise of
+                                the
+                                Radical Right</h5>
+                            <h6 class="tag sociedade">Sociedade</h6>
+                            <p class="card-text">Who are the immensely wealthy right-wing ideologues shaping the fate of
+                                America today? From the bestselling author of The Dark Side, an electrifying work of
+                                investigative journalism that uncovers the agenda of this powerful group.</p>
+                            <div class="d-flex align-items-center mt-3">
+                                <img src="./img/books/no-profile-image-author.png" class="rounded-circle" alt="Avatar">
+                                <div class="ml-3">
+                                    <p class="mb-0 author">Jane Mayer</p>
+
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
 
-            <!-- Dark Money Modal -->
-            <div class="modal fade" id="modalDarkMoney" tabindex="-1" aria-labelledby="modalDarkMoneyLabel"
-                aria-hidden="true">
-                <div class="modal-dialog modal-lg">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="modalDarkMoneyLabel">Dark Money. The Hidden History of the
-                                Billionaires Behind the Rise of the
-                                Radical Right
-                            </h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
+                <!-- Dark Money Modal -->
+
+                <div class="modal fade" id="modalDarkMoney" tabindex="-1" aria-labelledby="modalDarkMoneyLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="modalDarkMoneyLabel">Dark Money. The Hidden History of the
+                                    Billionaires Behind the Rise of the
+                                    Radical Right
+                                </h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="./img/books/dark-money.jpg" class="img-fluid mb-3" alt="Book Image">
+                                <p>Why is America living in an age of profound and widening economic inequality? Why
+                                    have
+                                    even modest attempts to address climate change been defeated again and again? Why do
+                                    hedge-fund billionaires pay a far lower tax rate than middle-class workers? In a
+                                    riveting and indelible feat of reporting, Jane Mayer illuminates the history of an
+                                    elite
+                                    cadre of plutocrats—headed by the Kochs, the Scaifes, the Olins, and the
+                                    Bradleys—who
+                                    have bankrolled a systematic plan to fundamentally alter the American political
+                                    system.
+                                    Mayer traces a byzantine trail of billions of dollars spent by the network,
+                                    revealing a
+                                    staggering conglomeration of think tanks, academic institutions, media groups,
+                                    courthouses, and government allies that have fallen under their sphere of influence.
+                                    Drawing from hundreds of exclusive interviews, as well as extensive scrutiny of
+                                    public
+                                    records, private papers, and court proceedings, Mayer provides vivid portraits of
+                                    the
+                                    secretive figures behind the new American oligarchy and a searing look at the
+                                    carefully
+                                    concealed agendas steering the nation. Dark Money is an essential book for anyone
+                                    who
+                                    cares about the future of American democracy.
+                                </p>
+                            </div>
                         </div>
-                        <div class="modal-body">
-                            <img src="./img/books/dark-money.jpg" class="img-fluid mb-3" alt="Book Image">
-                            <p>Why is America living in an age of profound and widening economic inequality? Why have
-                                even modest attempts to address climate change been defeated again and again? Why do
-                                hedge-fund billionaires pay a far lower tax rate than middle-class workers? In a
-                                riveting and indelible feat of reporting, Jane Mayer illuminates the history of an elite
-                                cadre of plutocrats—headed by the Kochs, the Scaifes, the Olins, and the Bradleys—who
-                                have bankrolled a systematic plan to fundamentally alter the American political system.
-                                Mayer traces a byzantine trail of billions of dollars spent by the network, revealing a
-                                staggering conglomeration of think tanks, academic institutions, media groups,
-                                courthouses, and government allies that have fallen under their sphere of influence.
-                                Drawing from hundreds of exclusive interviews, as well as extensive scrutiny of public
-                                records, private papers, and court proceedings, Mayer provides vivid portraits of the
-                                secretive figures behind the new American oligarchy and a searing look at the carefully
-                                concealed agendas steering the nation. Dark Money is an essential book for anyone who
-                                cares about the future of American democracy.
+                    </div>
+                </div>
+
+                <!-- ---------------------------------------------------------------------------------------------------------- -->
+
+                <!-- Culture Warlords | Book -->
+
+                <div class="col-md-4 dataFilter  col-sm-6 sociedade">
+                    <div class="card">
+                        <div data-toggle="tooltip" title="Clique para mais detalhes">
+                            <img src="./img/books/culture-warlords.jpg" class="card-img-top" alt="Book Image"
+                                data-toggle="modal" data-target="#modalCultureWarlords">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Culture Warlord</h5>
+                            <h5 class="card-subtitle small">My Journey into the darkweb of white supremacy</h5>
+                            <h6 class="tag sociedade">Sociedade</h6>
+                            <p class="card-text">Culture Warlords is the story of how Lavin, a frequent target of
+                                extremist
+                                trolls
+                                (including those at Fox News), dove into a byzantine online culture of hate and learned
+                                the
+                                intricacies of how white supremacy proliferates online. Within these pages, she reveals
+                                the
+                                extremists hiding in plain sight online: Incels. White nationalists. White supremacists.
                             </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                            <div class="d-flex align-items-center mt-3">
+                                <img src="./img/books/culture-warlords-author.jpg" class="rounded-circle" alt="Avatar">
+                                <div class="ml-3">
+                                    <p class="mb-0 author">Jane Mayer</p>
 
-            <!-- ---------------------------------------------------------------------------------------------------------- -->
-
-            <!-- Culture Warlords | Book -->
-
-            <div class="col-md-3 dataFilter  col-sm-6 sociedade">
-                <div class="card">
-                    <div data-toggle="tooltip" title="Clique para mais detalhes">
-                        <img src="./img/books/culture-warlords.jpg" class="card-img-top" alt="Book Image" data-toggle="modal"
-                            data-target="#modalDarkMoney">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Culture Warlord</h5>
-                        <h5 class="card-subtitle small">My Journey into the darkweb of white supremacy</h5>
-                        <h6 class="tag sociedade">Sociedade</h6>
-                        <p class="card-text">Culture Warlords is the story of how Lavin, a frequent target of extremist trolls
-                            (including those at Fox News), dove into a byzantine online culture of hate and learned the
-                            intricacies of how white supremacy proliferates online. Within these pages, she reveals the
-                            extremists hiding in plain sight online: Incels. White nationalists. White supremacists.</p>
-                        <div class="d-flex align-items-center mt-3">
-                            <img src="./img/books/culture-warlords-author.jpg" class="rounded-circle" alt="Avatar">
-                            <div class="ml-3">
-                                <p class="mb-0 author">Jane Mayer</p>
-
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
 
 
-            <!-- Culture Warlords Modal -->
-            <div class="modal fade" id="modalCultureWarlords" tabindex="-1" aria-labelledby="modalCultureWarlordsLabel"
-                aria-hidden="true">
-                <div class="modal-dialog modal-lg">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="modalCultureWarlordsLabel">Culture Warlord </h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <img src="./img/books/culture-warlords.jpg" class="img-fluid mb-3" alt="Book Image">
-                            <p>Culture Warlords is the story of how Lavin, a frequent target of extremist trolls
-                                (including those at Fox News), dove into a byzantine online culture of hate and learned the
-                                intricacies of how white supremacy proliferates online. Within these pages, she reveals the
-                                extremists hiding in plain sight online: Incels. White nationalists. White supremacists. National
-                                Socialists. Proud Boys. Christian extremists. In order to showcase them in their natural
-                                habitat, Talia assumes a range of identities, going undercover as a blonde Nazi babe, a
-                                forlorn incel, and a violent Aryan femme fatale. Along the way, she discovers a
-                                whites-only
-                                dating site geared toward racists looking for love, a disturbing extremist YouTube
-                                channel
-                                run by a fourteen-year-old girl with over 800,000 followers, the everyday heroes of the
-                                antifascist movement, and much more. By combining compelling stories chock-full of
-                                catfishing and gate-crashing with her own in-depth, gut-wrenching research, she also
-                                turns
-                                the lens of anti-Semitism, racism, and white power back on itself in an attempt to
-                                dismantle
-                                and decimate the online hate movement from within.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- ---------------------------------------------------------------------------------------------------------- -->
-
-            <!-- A Fábrica de Cretinos digitais  -->
-            <div class="col-md-3 dataFilter  col-sm-6  sociedade">
-                <div class="card">
-                    <div data-toggle="tooltip" title="Clique para mais detalhes">
-                        <img src="./img/books/a-fabrica-de-cretinos-digitais.jpg" class="card-img-top" alt="Book Image"
-                            data-toggle="modal" data-target="#modalAFabricaDeCretinosDigitais">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">A Fábrica de Cretinos Digitais</h5>
-                        <h5 class="card-subtitle small">Os Perigos das Telas Para Nossas Crianças</h5>
-                        <h6 class="tag sociedade">Sociedade</h6>
-                        <p class="card-text">Por que os grandes gurus do Vale do Silício proíbem seus filhos de usar
-                            telas?
-                            Você sabia que nunca na história da humanidade houve um declínio tão acentuado nas
-                            habilidades
-                            cognitivas? Você sabia que apenas trinta minutos por dia na frente de uma tela são
-                            suficientes
-                            para que o desenvolvimento intelectual da criança comece a ser afetado? </p>
-                        <div class="d-flex align-items-center mt-3">
-                            <img src="./img/books/no-profile-image-author.png" class="rounded-circle" alt="Avatar">
-                            <div class="ml-3">
-                                <p class="mb-0 author">Michel Desmurget</p>
+                <!-- Culture Warlords Modal -->
+                <div class="modal fade" id="modalCultureWarlords" tabindex="-1"
+                    aria-labelledby="modalCultureWarlordsLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="modalCultureWarlordsLabel">Culture Warlord </h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="./img/books/culture-warlords.jpg" class="img-fluid mb-3" alt="Book Image">
+                                <p>Culture Warlords is the story of how Lavin, a frequent target of extremist trolls
+                                    (including those at Fox News), dove into a byzantine online culture of hate and
+                                    learned
+                                    the
+                                    intricacies of how white supremacy proliferates online. Within these pages, she
+                                    reveals
+                                    the
+                                    extremists hiding in plain sight online: Incels. White nationalists. White
+                                    supremacists.
+                                    National
+                                    Socialists. Proud Boys. Christian extremists. In order to showcase them in their
+                                    natural
+                                    habitat, Talia assumes a range of identities, going undercover as a blonde Nazi
+                                    babe, a
+                                    forlorn incel, and a violent Aryan femme fatale. Along the way, she discovers a
+                                    whites-only
+                                    dating site geared toward racists looking for love, a disturbing extremist YouTube
+                                    channel
+                                    run by a fourteen-year-old girl with over 800,000 followers, the everyday heroes of
+                                    the
+                                    antifascist movement, and much more. By combining compelling stories chock-full of
+                                    catfishing and gate-crashing with her own in-depth, gut-wrenching research, she also
+                                    turns
+                                    the lens of anti-Semitism, racism, and white power back on itself in an attempt to
+                                    dismantle
+                                    and decimate the online hate movement from within.
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- A Fábrica de Cretinos digitais Modal -->
-            <div class="modal fade" id="modalAFabricaDeCretinosDigitais" tabindex="-1"
-                aria-labelledby="modalAFabricaDeCretinosDigitaisLabel" aria-hidden="true">
-                <div class="modal-dialog modal-lg">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="modalAFabricaDeCretinosDigitaisLabel">A Fábrica de Cretinos
-                                Digitais. Os Perigos das Telas Para Nossas Crianças</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
+                <!-- ---------------------------------------------------------------------------------------------------------- -->
+
+                <!-- A Fábrica de Cretinos digitais  -->
+                <div class="col-md-4 dataFilter  col-sm-6  sociedade">
+                    <div class="card">
+                        <div data-toggle="tooltip" title="Clique para mais detalhes">
+                            <img src="./img/books/a-fabrica-de-cretinos-digitais.jpg" class="card-img-top"
+                                alt="Book Image" data-toggle="modal" data-target="#modalAFabricaDeCretinosDigitais">
                         </div>
-                        <div class="modal-body">
-                            <img src="./img/books/a-fabrica-de-cretinos-digitais.jpg" class="img-fluid mb-3"
-                                alt="Book Image">
-                            <p>O uso da tecnologia digital – smartphones, computadores, tablets, etc. – pelas novas
-                                gerações
-                                tem sido absolutamente astronômico. Para crianças de 2 a 8 anos de idade, o consumo
-                                médio é
-                                de cerca de três horas por dia. Entre 8 e 12 anos, a média diária gira em torno de cinco
-                                horas. Na adolescência, esse número sobe para quase sete horas, o que significa mais de
-                                2.400 horas por ano, em plena fase de desenvolvimento intelectual.</p>
-
-                            <p>Ao contrário do que a imprensa e a indústria da tecnologia costumam difundir, o uso das
-                                telas, longe de ajudar no desenvolvimento de crianças e estudantes, acarreta sérios
-                                malefícios à saúde do corpo (obesidade, problemas cardiovasculares, expectativa de vida
-                                reduzida), ao estado emocional (agressividade, depressão, comportamentos de risco) e ao
-                                desenvolvimento intelectual (empobrecimento da linguagem, dificuldade de concentração e
-                                memória).</p>
-
-                            <p>O neurocientista Michel Desmurget, diretor de pesquisa do Instituto Nacional de Saúde da
-                                França, propõe a primeira síntese de vários estudos que confirmaram os perigos reais das
-                                telas e nos alerta para as graves consequências de continuarmos a promover sem senso
-                                crítico
-                                o uso dessas tecnologias.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- ---------------------------------------------------------------------------------------------------------- -->
-
-            <!-------------------------------------------------- LITERATURA ----------------------------------------------- -->
-
-            <!-- A palavra que resta -->
-            <div class="col-md-3 dataFilter  col-sm-6   literatura">
-                <div class="card">
-                    <div data-toggle="tooltip" title="Clique para mais detalhes">
-                        <img src="./img/books/a-palavra-que-resta.jpg" class="card-img-top" alt="Book Image"
-                            data-toggle="modal" data-target="#modalAPalavraQueResta">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">A palavra que resta</h5>
-                        <h5 class="card-subtitle small">&nbsp;</h5>
-                        <h6 class="tag literatura">Literatura</h6>
-                        <p class="card-text">Neste primoroso romance de estreia, acompanhamos a trajetória de Raimundo,
-                            homem analfabeto que na juventude teve seu amor secreto brutalmente interrompido e que por
-                            cinquenta anos guardou consigo uma carta que nunca pôde ler. </p>
-                        <div class="d-flex align-items-center mt-3">
-                            <img src="./img/books/a-palavra-que-resta-author.jpg" class="rounded-circle" alt="Avatar">
-                            <div class="ml-3">
-                                <p class="mb-0 author">Stênio Gardel</p>
+                        <div class="card-body">
+                            <h5 class="card-title">A Fábrica de Cretinos Digitais</h5>
+                            <h5 class="card-subtitle small">Os Perigos das Telas Para Nossas Crianças</h5>
+                            <h6 class="tag sociedade">Sociedade</h6>
+                            <p class="card-text">Por que os grandes gurus do Vale do Silício proíbem seus filhos de usar
+                                telas?
+                                Você sabia que nunca na história da humanidade houve um declínio tão acentuado nas
+                                habilidades
+                                cognitivas? Você sabia que apenas trinta minutos por dia na frente de uma tela são
+                                suficientes
+                                para que o desenvolvimento intelectual da criança comece a ser afetado? </p>
+                            <div class="d-flex align-items-center mt-3">
+                                <img src="./img/books/no-profile-image-author.png" class="rounded-circle" alt="Avatar">
+                                <div class="ml-3">
+                                    <p class="mb-0 author">Michel Desmurget</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- A Palavra que resta Modal -->
-            <div class="modal fade" id="modalAPalavraQueResta" tabindex="-1"
-                aria-labelledby="modalAPalavraQueRestaLabel" aria-hidden="true">
-                <div class="modal-dialog modal-lg">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="modalAPalavraQueRestaLabel">A palavra que resta</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
+                <!-- A Fábrica de Cretinos digitais Modal -->
+                <div class="modal fade" id="modalAFabricaDeCretinosDigitais" tabindex="-1"
+                    aria-labelledby="modalAFabricaDeCretinosDigitaisLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="modalAFabricaDeCretinosDigitaisLabel">A Fábrica de Cretinos
+                                    Digitais. Os Perigos das Telas Para Nossas Crianças</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="./img/books/a-fabrica-de-cretinos-digitais.jpg" class="img-fluid mb-3"
+                                    alt="Book Image">
+                                <p>O uso da tecnologia digital – smartphones, computadores, tablets, etc. – pelas novas
+                                    gerações
+                                    tem sido absolutamente astronômico. Para crianças de 2 a 8 anos de idade, o consumo
+                                    médio é
+                                    de cerca de três horas por dia. Entre 8 e 12 anos, a média diária gira em torno de
+                                    cinco
+                                    horas. Na adolescência, esse número sobe para quase sete horas, o que significa mais
+                                    de
+                                    2.400 horas por ano, em plena fase de desenvolvimento intelectual.</p>
+
+                                <p>Ao contrário do que a imprensa e a indústria da tecnologia costumam difundir, o uso
+                                    das
+                                    telas, longe de ajudar no desenvolvimento de crianças e estudantes, acarreta sérios
+                                    malefícios à saúde do corpo (obesidade, problemas cardiovasculares, expectativa de
+                                    vida
+                                    reduzida), ao estado emocional (agressividade, depressão, comportamentos de risco) e
+                                    ao
+                                    desenvolvimento intelectual (empobrecimento da linguagem, dificuldade de
+                                    concentração e
+                                    memória).</p>
+
+                                <p>O neurocientista Michel Desmurget, diretor de pesquisa do Instituto Nacional de Saúde
+                                    da
+                                    França, propõe a primeira síntese de vários estudos que confirmaram os perigos reais
+                                    das
+                                    telas e nos alerta para as graves consequências de continuarmos a promover sem senso
+                                    crítico
+                                    o uso dessas tecnologias.
+                                </p>
+                            </div>
                         </div>
-                        <div class="modal-body">
-                            <img src="./img/books/a-palavra-que-resta.jpg" class="img-fluid mb-3" alt="Book Image">
-                            <p> * Livro vencedor do National Book Award de melhor obra traduzida de literatura.</p>
-                            <p>Aos 71 anos, Raimundo decide aprender a ler e a escrever. Nascido e criado na roça, não
-                                foi à
-                                escola, pois cedo precisou ajudar o pai na lida diária. Mas há muito deixou a família e
+                    </div>
+                </div>
+                <!-- ---------------------------------------------------------------------------------------------------------- -->
+
+                <!-------------------------------------------------- LITERATURA ----------------------------------------------- -->
+
+                <!-- A palavra que resta -->
+                <div class="col-md-4 dataFilter  col-sm-6   literatura">
+                    <div class="card">
+                        <div data-toggle="tooltip" title="Clique para mais detalhes">
+                            <img src="./img/books/a-palavra-que-resta.jpg" class="card-img-top" alt="Book Image"
+                                data-toggle="modal" data-target="#modalAPalavraQueResta">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">A palavra que resta</h5>
+                            <h5 class="card-subtitle small">&nbsp;</h5>
+                            <h6 class="tag literatura">Literatura</h6>
+                            <p class="card-text">Neste primoroso romance de estreia, acompanhamos a trajetória de
+                                Raimundo,
+                                homem analfabeto que na juventude teve seu amor secreto brutalmente interrompido e que
+                                por
+                                cinquenta anos guardou consigo uma carta que nunca pôde ler. </p>
+                            <div class="d-flex align-items-center mt-3">
+                                <img src="./img/books/a-palavra-que-resta-author.jpg" class="rounded-circle"
+                                    alt="Avatar">
+                                <div class="ml-3">
+                                    <p class="mb-0 author">Stênio Gardel</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- A Palavra que resta Modal -->
+                <div class="modal fade" id="modalAPalavraQueResta" tabindex="-1"
+                    aria-labelledby="modalAPalavraQueRestaLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="modalAPalavraQueRestaLabel">A palavra que resta</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="./img/books/a-palavra-que-resta.jpg" class="img-fluid mb-3" alt="Book Image">
+                                <p> <em>Livro vencedor do National Book Award de melhor obra traduzida de
+                                        literatura.</em>
+                                </p>
+                                <p>Aos 71 anos, Raimundo decide aprender a ler e a escrever. Nascido e criado na roça,
+                                    não
+                                    foi à escola, pois cedo precisou ajudar o pai na lida diária. Mas há muito deixou a
+                                    família e
+                                    a vida no sertão para trás. Desse tempo, Raimundo guarda apenas a carta que recebeu
+                                    de
+                                    Cícero, há mais de cinquenta anos, quando o amor escondido entre os dois foi
+                                    descoberto.
+                                    Cícero
+                                    partiu sem deixar pistas, a não ser aquela carta que Raimundo não sabe ler — ao
+                                    menos
+                                    até agora.</p>
+                                <p>Com uma narrativa sensível e magnética, o escritor cearense Stênio Gardel nos leva
+                                    pelo
+                                    passado de Raimundo, permeado de conflitos familiares e da dor do ocultamento de sua
+                                    sexualidade, mas também das novas relações que estabeleceu depois de fugir de casa e
+                                    cair na estrada, ressignificando seu destino mais de uma vez.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ---------------------------------------------------------------------------------------------------------- -->
+
+                <!-- Oração para desaparecer -->
+                <div class="col-md-4 dataFilter  col-sm-6  literatura">
+                    <div class="card">
+                        <div data-toggle="tooltip" title="Clique para mais detalhes">
+                            <img src="./img/books/oracao-para-desaparecer.jpg" class="card-img-top" alt="Book Image"
+                                data-toggle="modal" data-target="#modalOracaoParaDesaparecer">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Oração para Desaparecer</h5>
+                            <h5 class="card-subtitle small">&nbsp;</h5>
+                            <h6 class="tag literatura">Literatura</h6>
+                            <p class="card-text">Primeiro romance de Socorro Acioli após A cabeça do santo, Oração para
+                                Desaparecer conta a história de uma mulher que, sem lembrança nenhuma de seu passado,
+                                precisa
+                                reconstruir a vida em um lugar completamente desconhecido, apenas com a língua
+                                portuguesa
+                                como
+                                porto seguro.</p>
+                            <div class="d-flex align-items-center mt-3">
+                                <img src="./img/books/oracao-para-desaparecer-author.jpg" class="rounded-circle"
+                                    alt="Avatar">
+                                <div class="ml-3">
+                                    <p class="mb-0 author">Socorro Acioli</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Oraçaõ para desaparecer Modal -->
+                <div class="modal fade" id="modalOracaoParaDesaparecer" tabindex="-1"
+                    aria-labelledby="modalOracaoParaDesaparecer" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="modalOracaoParaDesaparecer">Oração para Desaparecer</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="./img/books/oracao-para-desaparecer.jpg" class="img-fluid mb-3"
+                                    alt="Book Image">
+                                <p>Cida, uma mulher sem identidade nem memória, reconstrói pouco a pouco uma nova vida
+                                    em um
+                                    lugar completamente desconhecido. Jorge encontra nessa misteriosa estrangeira uma
+                                    paixão
+                                    inesperada, que recria o que não parece provável. Do outro lado do Atlântico, Joana
+                                    é o
+                                    fantasma de um amor há muitos anos perdido por Miguel.</p>
+                                <p>Quando os quatro personagens se entrecruzam no tempo em busca de respostas para as
+                                    próprias
+                                    angústias, se deparam também com uma trama fantástica sobre magia, ancestralidade e
+                                    pertencimento. Oração para Desaparecer é uma das histórias possíveis sobre o amor e
+                                    seu
+                                    poder de dissolver as barreiras do imponderável.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ---------------------------------------------------------------------------------------------------------- -->
+
+                <!-- Ordem Vermelha -->
+                <div class="col-md-4 dataFilter  col-sm-6  literatura">
+                    <div class="card">
+                        <div data-toggle="tooltip" title="Clique para mais detalhes">
+                            <img src="./img/books/ordem-vermelha.jpg" class="card-img-top" alt="Book Image"
+                                data-toggle="modal" data-target="#modalOrdemVermelha">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Ordem vermelha</h5>
+                            <h5 class="card-subtitle small">Filhos da degradação</h5>
+                            <h6 class="tag literatura">Literatura</h6>
+                            <p class="card-text">Este livro narra a história de um mundo devastado pela degradação, onde
                                 a
-                                vida no sertão para trás. Desse tempo, Raimundo guarda apenas a carta que recebeu de
-                                Cícero,
-                                há mais de cinquenta anos, quando o amor escondido entre os dois foi descoberto. Cícero
-                                partiu sem deixar pistas, a não ser aquela carta que Raimundo não sabe ler — ao menos
-                                até
-                                agora.</p>
-                            <p>Com uma narrativa sensível e magnética, o escritor cearense Stênio Gardel nos leva pelo
-                                passado de Raimundo, permeado de conflitos familiares e da dor do ocultamento de sua
-                                sexualidade, mas também das novas relações que estabeleceu depois de fugir de casa e
-                                cair na
-                                estrada, ressignificando seu destino mais de uma vez.
+                                ordem
+                                vermelha luta para sobreviver. Felipe Castillo nos leva a uma jornada épica através de
+                                um
+                                cenário pós-apocalíptico.</p>
+                            <div class="d-flex align-items-center mt-3">
+                                <img src="./img/books/no-profile-image-author.png" class="rounded-circle" alt="Avatar">
+                                <div class="ml-3">
+                                    <p class="mb-0 author">Felipe Castillo</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal for Ordem Vermelha -->
+                <div class="modal fade" id="modalOrdemVermelha" tabindex="-1" aria-labelledby="modalOrdemVermelhaLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="modalOrdemVermelhaLabel">Ordem vermelha - Filhos da
+                                    degradação
+                                </h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="./img/books/ordem-vermelha.jpg" class="img-fluid mb-3" alt="Book Image">
+                                <p>No primeiro ato desta jornada épica, duas guerreiras estão dispostas a tudo para
+                                    desmascarar
+                                    uma mentira milenar…Cumprindo sua missão milenar, as seis raças coexistem em
+                                    relativa
+                                    paz.
+                                    Até que a kaorsh Yanisha descobre um segredo capaz de abalar as estruturas do
+                                    Palácio.
+                                    Junto
+                                    com a esposa, Raazi, ela arquiteta um plano tão corajoso quanto arriscado, que terá
+                                    como
+                                    cenário o Festival da Morte.Na última edição do Festival, o falcoeiro Aelian perdeu
+                                    o
+                                    pai. O
+                                    jovem não se lembra de como era ser livre, mas nunca esqueceu como é ter uma
+                                    família. Ao
+                                    voltar à Arena, ele vai testemunhar acontecimentos que mudarão definitivamente sua
+                                    vida.
+                                    Afinal, o que pode vir depois da queda de uma deusa? Ordem Vermelha: Filhos da
+                                    Degradação é
+                                    o início da jornada de um grupo improvável de heróis lutando pela liberdade de um
+                                    povo.
+                                    Um
+                                    épico sobre resistir à opressão, lutar contra o status quo e construir bravamente o
+                                    próprio
+                                    destino.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ---------------------------------------------------------------------------------------------------------- -->
+
+                <!-- 2041 -->
+                <div class="col-md-4 dataFilter  col-sm-6  tech">
+                    <div class="card">
+                        <div data-toggle="tooltip" title="Clique para mais detalhes">
+                            <img src="./img/books/2041.jpg" class="card-img-top" alt="Book Image" data-toggle="modal"
+                                data-target="#modal2041">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">2041</h5>
+                            <h5 class="card-subtitle small">Como a inteligência artificial vai mudar sua vida nas
+                                próximas
+                                décadas</h5>
+                            <h6 class="tag tech">Tech</h6>
+                            <h6 class="tag literatura">Literatura</h6>
+                            <p class="card-text">No livro 2041 , um dos maiores especialistas em inteligência artificial
+                                imagina, através de análises e contos no melhor estilo Black Mirror , uma realidade
+                                dominada
+                                pela tecnologia.
                             </p>
+                            <div class="d-flex align-items-center mt-3">
+                                <img src="./img/books/2041-author-1.jpg" class="rounded-circle" alt="Avatar">
+                                <div class="ml-3">
+                                    <p class="mb-0 author"> Kai-Fu Lee</p>
+                                </div>
+
+                                <img src="./img/books/2041-author-2.jpg" class="rounded-circle" alt="Avatar">
+                                <div class="ml-3">
+                                    <p class="mb-0 author"> Chen Qiufan</p>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
-            </div>
-            <!-- ---------------------------------------------------------------------------------------------------------- -->
+                <!-- Modal for 2041 -->
+                <div class="modal fade" id="modal2041" tabindex="-1" aria-labelledby="modal2041Label"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="modal2041Label">2041 - Como a inteligência artificial vai
+                                    mudar
+                                    sua vida
+                                    nas próximas décadas</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="./img/books/2041.jpg" class="img-fluid mb-3" alt="Book Image">
+                                <p>Saindo do clichê dos livros teóricos e cheios de conceitos incompreensíveis ao
+                                    público
+                                    leigo,
+                                    Kai-Fu Lee, fundador da Google China e autor do best-seller Inteligência artificial
+                                    , e
+                                    Chen
+                                    Qiufan, um dos grandes nomes do sci-fi, apresentam ao leitor dez contos que mostram
+                                    de
+                                    forma
+                                    divertida concepções que podem se tornar uma realidade até 2041. Ainda que alguns
+                                    deles
+                                    pareçam saídos de um filme de ficção científica, outros serão facilmente
+                                    reconhecidos
+                                    pelo
+                                    leitor como parte do seu cotidiano.</p>
 
-            <!-- Oração para desaparecer -->
-            <div class="col-md-3 dataFilter  col-sm-6  literatura">
-                <div class="card">
-                    <div data-toggle="tooltip" title="Clique para mais detalhes">
-                        <img src="./img/books/oracao-para-desaparecer.jpg" class="card-img-top" alt="Book Image"
-                            data-toggle="modal" data-target="#modalOracaoParaDesaparecer">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Oração para Desaparecer</h5>
-                        <h5 class="card-subtitle small">&nbsp;</h5>
-                        <h6 class="tag literatura">Literatura</h6>
-                        <p class="card-text">Primeiro romance de Socorro Acioli após A cabeça do santo, Oração para
-                            Desaparecer conta a história de uma mulher que, sem lembrança nenhuma de seu passado,
-                            precisa
-                            reconstruir a vida em um lugar completamente desconhecido, apenas com a língua portuguesa
-                            como
-                            porto seguro.</p>
-                        <div class="d-flex align-items-center mt-3">
-                            <img src="./img/books/oracao-para-desaparecer-author.jpg" class="rounded-circle"
-                                alt="Avatar">
-                            <div class="ml-3">
-                                <p class="mb-0 author">Socorro Acioli</p>
+                                <p>Cada conto de Chen Qiufan é acompanhado por uma análise de Kai-Fu Lee sobre como a
+                                    tecnologia
+                                    apresentada na trama fará em breve parte de nossas vidas. Os temas vão desde carros
+                                    sem
+                                    motoristas e robôs que farão todo o trabalho que consideramos entediante até novas
+                                    formas de
+                                    educação e de cuidados com aqueles que estão prestes a partir. Os autores apresentam
+                                    de
+                                    maneira simples e direta temas que poderiam, de outro modo, soar complexos, ao mesmo
+                                    tempo
+                                    em que refletem sobre como a inteligência artificial já é uma realidade para nós.
+                                </p>
+
+                                <p> 2041 demonstra como o mundo pode ser daqui a duas décadas em uma obra dedicada não
+                                    apenas
+                                    aos leitores que se interessam por tecnologia, mas também a todos aqueles que
+                                    desejam
+                                    ter um
+                                    vislumbre de como serão os próximos anos.</p>
                             </div>
                         </div>
                     </div>
                 </div>
+                <!-- ---------------------------------------------------------------------------------------------------------- -->
+
             </div>
-
-            <!-- Oraçaõ para desaparecer Modal -->
-            <div class="modal fade" id="modalOracaoParaDesaparecer" tabindex="-1"
-                aria-labelledby="modalOracaoParaDesaparecer" aria-hidden="true">
-                <div class="modal-dialog modal-lg">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="modalOracaoParaDesaparecer">Oração para Desaparecer</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <img src="./img/books/oracao-para-desaparecer.jpg" class="img-fluid mb-3" alt="Book Image">
-                            <p>Cida, uma mulher sem identidade nem memória, reconstrói pouco a pouco uma nova vida em um
-                                lugar completamente desconhecido. Jorge encontra nessa misteriosa estrangeira uma paixão
-                                inesperada, que recria o que não parece provável. Do outro lado do Atlântico, Joana é o
-                                fantasma de um amor há muitos anos perdido por Miguel.</p>
-                            <p>Quando os quatro personagens se entrecruzam no tempo em busca de respostas para as
-                                próprias
-                                angústias, se deparam também com uma trama fantástica sobre magia, ancestralidade e
-                                pertencimento. Oração para Desaparecer é uma das histórias possíveis sobre o amor e seu
-                                poder de dissolver as barreiras do imponderável.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- ---------------------------------------------------------------------------------------------------------- -->
-
-            <!-- Ordem Vermelha -->
-            <div class="col-md-3 dataFilter  col-sm-6  literatura">
-                <div class="card">
-                    <div data-toggle="tooltip" title="Clique para mais detalhes">
-                        <img src="./img/books/ordem-vermelha.jpg" class="card-img-top" alt="Book Image"
-                            data-toggle="modal" data-target="#modalOrdemVermelha">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Ordem vermelha</h5>
-                        <h5 class="card-subtitle small">Filhos da degradação</h5>
-                        <h6 class="tag literatura">Literatura</h6>
-                        <p class="card-text">Este livro narra a história de um mundo devastado pela degradação, onde a
-                            ordem
-                            vermelha luta para sobreviver. Felipe Castillo nos leva a uma jornada épica através de um
-                            cenário pós-apocalíptico.</p>
-                        <div class="d-flex align-items-center mt-3">
-                            <img src="./img/books/no-profile-image-author.png" class="rounded-circle" alt="Avatar">
-                            <div class="ml-3">
-                                <p class="mb-0 author">Felipe Castillo</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Modal for Ordem Vermelha -->
-            <div class="modal fade" id="modalOrdemVermelha" tabindex="-1" aria-labelledby="modalOrdemVermelhaLabel"
-                aria-hidden="true">
-                <div class="modal-dialog modal-lg">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="modalOrdemVermelhaLabel">Ordem vermelha - Filhos da degradação
-                            </h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <img src="./img/books/ordem-vermelha.jpg" class="img-fluid mb-3" alt="Book Image">
-                            <p>No primeiro ato desta jornada épica, duas guerreiras estão dispostas a tudo para
-                                desmascarar
-                                uma mentira milenar…Cumprindo sua missão milenar, as seis raças coexistem em relativa
-                                paz.
-                                Até que a kaorsh Yanisha descobre um segredo capaz de abalar as estruturas do Palácio.
-                                Junto
-                                com a esposa, Raazi, ela arquiteta um plano tão corajoso quanto arriscado, que terá como
-                                cenário o Festival da Morte.Na última edição do Festival, o falcoeiro Aelian perdeu o
-                                pai. O
-                                jovem não se lembra de como era ser livre, mas nunca esqueceu como é ter uma família. Ao
-                                voltar à Arena, ele vai testemunhar acontecimentos que mudarão definitivamente sua vida.
-                                Afinal, o que pode vir depois da queda de uma deusa? Ordem Vermelha: Filhos da
-                                Degradação é
-                                o início da jornada de um grupo improvável de heróis lutando pela liberdade de um povo.
-                                Um
-                                épico sobre resistir à opressão, lutar contra o status quo e construir bravamente o
-                                próprio
-                                destino.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- ---------------------------------------------------------------------------------------------------------- -->
-
-            <!-- 2041 -->
-            <div class="col-md-3 dataFilter  col-sm-6  tech">
-                <div class="card">
-                    <div data-toggle="tooltip" title="Clique para mais detalhes">
-                        <img src="./img/books/2041.jpg" class="card-img-top" alt="Book Image" data-toggle="modal"
-                            data-target="#modal2041">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">2041</h5>
-                        <h5 class="card-subtitle small">Como a inteligência artificial vai mudar sua vida nas próximas
-                            décadas</h5>
-                        <h6 class="tag tech">Tech</h6>
-                        <h6 class="tag literatura">Literatura</h6>
-                        <p class="card-text">No livro 2041 , um dos maiores especialistas em inteligência artificial
-                            imagina, através de análises e contos no melhor estilo Black Mirror , uma realidade dominada
-                            pela tecnologia.
-                        </p>
-                        <div class="d-flex align-items-center mt-3">
-                            <img src="./img/books/2041-author-1.jpg" class="rounded-circle" alt="Avatar">
-                            <div class="ml-3">
-                                <p class="mb-0 author"> Kai-Fu Lee</p>
-                            </div>
-
-                            <img src="./img/books/2041-author-2.jpg" class="rounded-circle" alt="Avatar">
-                            <div class="ml-3">
-                                <p class="mb-0 author"> Chen Qiufan</p>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-            <!-- Modal for 2041 -->
-            <div class="modal fade" id="modal2041" tabindex="-1" aria-labelledby="modal2041Label" aria-hidden="true">
-                <div class="modal-dialog modal-lg">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="modal2041Label">2041 - Como a inteligência artificial vai mudar
-                                sua vida
-                                nas próximas décadas</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <img src="./img/books/2041.jpg" class="img-fluid mb-3" alt="Book Image">
-                            <p>Saindo do clichê dos livros teóricos e cheios de conceitos incompreensíveis ao público
-                                leigo,
-                                Kai-Fu Lee, fundador da Google China e autor do best-seller Inteligência artificial , e
-                                Chen
-                                Qiufan, um dos grandes nomes do sci-fi, apresentam ao leitor dez contos que mostram de
-                                forma
-                                divertida concepções que podem se tornar uma realidade até 2041. Ainda que alguns deles
-                                pareçam saídos de um filme de ficção científica, outros serão facilmente reconhecidos
-                                pelo
-                                leitor como parte do seu cotidiano.</p>
-
-                            <p>Cada conto de Chen Qiufan é acompanhado por uma análise de Kai-Fu Lee sobre como a
-                                tecnologia
-                                apresentada na trama fará em breve parte de nossas vidas. Os temas vão desde carros sem
-                                motoristas e robôs que farão todo o trabalho que consideramos entediante até novas
-                                formas de
-                                educação e de cuidados com aqueles que estão prestes a partir. Os autores apresentam de
-                                maneira simples e direta temas que poderiam, de outro modo, soar complexos, ao mesmo
-                                tempo
-                                em que refletem sobre como a inteligência artificial já é uma realidade para nós.</p>
-
-                            <p> 2041 demonstra como o mundo pode ser daqui a duas décadas em uma obra dedicada não
-                                apenas
-                                aos leitores que se interessam por tecnologia, mas também a todos aqueles que desejam
-                                ter um
-                                vislumbre de como serão os próximos anos.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- ---------------------------------------------------------------------------------------------------------- -->
-
-        </div>
-    </section>
+        </section>
+    </main>
 
     <section id="about" class="container my-5">
         <div class="row">
@@ -520,30 +602,73 @@
                     Federal do Sul de Minas (IFMG).</p>
                 <p>
                     Possuo uma lista de livros de próximas leituas, apenas para minha própria organização. Então, decidi
-                    criar este projeto
-                    para relembrar e aplicar meus conhecimentos sobre as tecnologias aprendidas até o momento da
+                    criar este projeto para relembrar e aplicar meus conhecimentos sobre as tecnologias estudadas até o
+                    momento da
                     disciplina.
                 </p>
 
+                <p>Este projeto foi desenvolvido utilizando </p>
+
+
+                <div class="badges">
+                    <img
+                        src="https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white" />
+                    <img
+                        src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white" />
+                    <img
+                        src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white" />
+                    <img
+                        src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E" />
+                    <img
+                        src="https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white" />
+                    <img
+                        src="https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white" />
+                    <img
+                        src="https://img.shields.io/badge/Firefox-FF7139?style=for-the-badge&logo=Firefox-Browser&logoColor=white" />
+                    <img
+                        src="https://img.shields.io/badge/github%20pages-121013?style=for-the-badge&logo=github&logoColor=white" />
+                </div>
+
+                <h3>Requisitos avaliativos do projeto</h3>
+                <p>Para a avaliação do projeto, foram solicitados os seguintes requisitos:</p>
+                <ul class="no-bullets">
+                    <li><input type="checkbox" checked> Parte HTML (1 ponto) - conter tags como header, nav, section,
+                        footer (essas são obrigatórias)</li>
+                    <li><input type="checkbox" checked> Parte CSS (1 ponto) - fazer suas formatações de maneira externa,
+                        criar suas próprias além do bootstrap</li>
+                    <li><input type="checkbox" checked> Parte Bootstrap (1 ponto) - utilizar classes e a estrutura do
+                        bootstrap</li>
+                    <li><input type="checkbox" checked> Parte Javascript (1 ponto) - colocar alguma interação realizada
+                        pelo bootstrap, uma data, contador, por ex.</li>
+                    <li><input type="checkbox" checked> Parte responsividade (1 ponto) - fazer as adaptações para que se
+                        eu diminuir o site (resoluções inferiores a 1366 X 768 - monitor de 15"), os itens continuem
+                        visíveis e organizados.</li>
+                </ul>
+
+                <p>Para mais informações, acesse o repositório do projeto no <a href="#"> </a></p>
+
             </div>
         </div>
+
     </section>
 
-    <section id="contato" class="rounded-section bg-light">
-        <div class="container">
-            <h2>Desenvolvido com ❤️ por:</h2>
+    <aside>
+        <section id="contato" class="rounded-section bg-light">
+            <div class="container">
+                <h2>Desenvolvido com ❤️ por:</h2>
 
-            <div class="mt-4">
-                <h5>Jonas Campos</h5>
-                <p>
-                    <a href="https://api.whatsapp.com/send?phone=5519994698017&amp;text=Te%20achei%20pelo%20*Brain%20Agriculture*%20e%20preciso%20de%20um%20desenvolvedor%20%20para%20alguns%20projetos."
-                        target="_blank">Whatsapp
-                    </a>
-                </p>
-                <p>Email: <a href="mailto:jonasaacampos@gmail.com">Enviar email</a> </p>
+                <div class="mt-4">
+                    <h5>Jonas Campos</h5>
+                    <p>
+                        <a href="https://api.whatsapp.com/send?phone=5519994698017&amp;text=Te%20achei%20pelo%20*Brain%20Agriculture*%20e%20preciso%20de%20um%20desenvolvedor%20%20para%20alguns%20projetos."
+                            target="_blank">Whatsapp
+                        </a>
+                    </p>
+                    <p>Email: <a href="mailto:jonasaacampos@gmail.com">Enviar email</a> </p>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </aside>
 
     <footer class="bg-dark text-white text-center p-3">
         <p>2024 - Jonas Campos. Cópia e Adapação livres, desde que citada a fonte.</p>
@@ -556,7 +681,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
     <!-- My scripts -->
-    <script src="js/scripts.js"></script>
+    <script src="js/show-whatch.js"></script>
     <script src="js/menu-dropdown.js"></script>
     <script src="js/tooltip.js"></script>
 

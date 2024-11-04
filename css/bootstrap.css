@@ -5064,7 +5064,7 @@ fieldset:disabled .btn {
     color: var(--bs-card-title-color);
     font-family: fantasy;
     padding-bottom: 10px;
-    
+
 }
 
 .card-subtitle {
@@ -5072,7 +5072,7 @@ fieldset:disabled .btn {
     margin-bottom: 10px;
     color: var(--bs-card-subtitle-color);
     padding-bottom: 10px;
-    
+
 }
 
 
@@ -5144,13 +5144,14 @@ fieldset:disabled .btn {
     display: block;
     margin-left: auto;
     margin-right: auto;
-   
+
 }
 
 @media (max-width: 575.98px) {
     .card-img-top {
         width: 60%;
-        height: 300px; /* Altere a altura para 200px em dispositivos menores */
+        height: 300px;
+        /* Altere a altura para 200px em dispositivos menores */
     }
 }
 
