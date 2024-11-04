@@ -9,7 +9,8 @@
 
 <img alt="logo desc..." src="img/favicon.png" width=150 align=right>
 
-> Desenvolvimento de um site ustilizando html, css javascript, bootstrap e jquey, como projeto final da cadeira de Desenvolvimento Frontend. 
+> Desenvolvimento de um site ustilizando html, css javascript, bootstrap e jquey, como projeto final da cadeira de Desenvolvimento Frontend, ministrada por Janaina Faustino Leite. 
+> 
 > Especialização em Desenvolvimento Web, Instituto Federal de Minas Gerais.
 > 
 
